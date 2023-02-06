@@ -6,7 +6,7 @@ let UserSchema = new Schema({
   todos: [
     {
       todo: String,
-      checked : Boolean
+      checked: Boolean,
     },
   ],
 })
