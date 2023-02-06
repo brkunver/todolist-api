@@ -19,7 +19,7 @@ let signUp = async (req, res) => {
           todos: [
             {
               todo: "Add more todos",
-              checked : false
+              checked: false,
             },
           ],
         })

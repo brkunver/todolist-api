@@ -10,7 +10,7 @@ let getTodo = async (req, res) => {
       res.json({
         success: true,
         response: "Fetched todos succesfully",
-        data : userInfo.todos
+        data: userInfo.todos,
       })
     } catch (error) {
       res.json({

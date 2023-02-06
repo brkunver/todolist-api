@@ -22,14 +22,12 @@ let login = async (req, res) => {
         let token = jwt.sign({ username }, process.env.JWT_SECRET, {
           expiresIn: "7d",
         })
-        res
-        .status(200).setHeader("token" , token)
-          .json({
-            success: true,
-            response: "Login Successful",
-          })
+        res.status(200).setHeader("token", token).json({
+          success: true,
+          response: "Login Successful",
+        })
       }
-    } catch  {
+    } catch {
       res.json({
         success: false,
         response: "Please enter a valid username and password",
