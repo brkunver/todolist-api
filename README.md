@@ -2,7 +2,9 @@
 
 Üye kaydı olunabilen ve yapılacak not eklenebilen backend api
 
-Expressjs kullanarak yapılmıştır.
+- Express kullanarak yapılmıştır.
+- Veritabanı olarak MongoDB atlas kullanılmıştır.
+- Giriş yöntemi olarak Json Web Token kullanılmıştır.
 
 API Link : https://todolist-api.up.railway.app/
 
