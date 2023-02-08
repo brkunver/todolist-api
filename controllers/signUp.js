@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs"
 
 let signUp = async (req, res) => {
   let { username, password } = req.body
-  if (!username || !password) {
+  if (typeof username == "string" || typeof password == "string") {
     res.json({
       success: false,
       response: "Please enter a valid username or password",
