@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken"
 let deleteTodo = async (req, res) => {
   let id = req.body.id
   let token = req.headers.token
-  console.log(id, token)
+  //console.log(id, token)
   if (typeof token === "string" && typeof id === "string") {
     try {
       let user = jwt.verify(token, process.env.JWT_SECRET)
