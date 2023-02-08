@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken"
 
 let getTodo = async (req, res) => {
   let token = req.headers.token
-  if (token) {
+  if (typeof token == "string") {
     try {
       let user = jwt.verify(token, process.env.JWT_SECRET)
       let userInfo = await User.findOne({ username: user.username })
